@@ -5,12 +5,12 @@ let dataBaseUsuarios = new Array(10);
 function cargarUsuarios() {
    
     let user1 = new Usuario(
-        "Ana", 
-        "Rojas", 
+        "Valentina", 
+        "Martinez", 
         45, 
         "a.rojas@tienda.com", 
-        "a", 
-        1, 
+        "val", 
+        123, 
         101
     );
 
