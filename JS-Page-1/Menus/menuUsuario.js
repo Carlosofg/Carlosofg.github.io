@@ -1,4 +1,4 @@
-import { viewBalance, WithdrawMoney } from './FuncionesMenuUsuario/funcionesU.js';
+import { viewBalance, WithdrawMoney, depositMoney } from './FuncionesMenuUsuario/funcionesU.js';
 
 export function menuUser(userLog) {
 
@@ -6,7 +6,7 @@ export function menuUser(userLog) {
 
     while (openMenu) {
 
-        let opcion = parseInt(prompt("\t" + userLog.fullName + "\n" + "\tMENU\n" + "\n1.View balance\n" + "2.Withdraw money\n" + "3.Deposit money\n" + "4.Send money\n"));
+        let opcion = parseInt(prompt("\t" + userLog.fullName + "\n" + "\tMENU\n" + "\n1.View balance\n" + "2.Withdraw money\n" + "3.Deposit money\n"));
 
         switch (opcion) {
 
@@ -19,6 +19,15 @@ export function menuUser(userLog) {
 
                 WithdrawMoney(userLog);
                 break;
+
+            case 3:
+
+                depositMoney(userLog);
+                break;
+
+            default:
+
+                alert("Invalid option");
         }
 
 

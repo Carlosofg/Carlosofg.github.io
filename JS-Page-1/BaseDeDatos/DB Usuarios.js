@@ -26,11 +26,11 @@ function cargarUsuarios() {
     
     let user3 = new Usuario(
         "Carlos", 
-        "Guevara", 
+        "Acosta", 
         21, 
         "carlos19@gmail.com", 
         "carlos19", 
-        12345, 
+        123, 
         103
     );
     
