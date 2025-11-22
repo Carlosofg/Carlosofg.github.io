@@ -5,12 +5,12 @@ let dataBaseAdmins = new Array(10);
 function cargarAdmins() {
 
     let admin1 = new Admin(
-        "Ana",
-        "Torres",
+        "Carlos",
+        "Lopez",
         40,
         "ana.torres@admin.com",
-        "anaT",
-        11111,
+        "cj",
+        123,
         201
     );
     let admin2 = new Admin(
