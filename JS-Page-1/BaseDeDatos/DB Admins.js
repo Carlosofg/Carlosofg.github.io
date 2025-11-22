@@ -9,7 +9,7 @@ function cargarAdmins() {
         "Lopez",
         40,
         "ana.torres@admin.com",
-        "cj",
+        "cja",
         123,
         201
     );
