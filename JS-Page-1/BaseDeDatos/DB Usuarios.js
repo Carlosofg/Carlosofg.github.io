@@ -15,12 +15,12 @@ function cargarUsuarios() {
     );
 
     let user2 = new Usuario(
-        "Pedro", 
-        "Soto", 
+        "Carlos", 
+        "Lopez", 
         38, 
         "psoto@tienda.com", 
-        "psoto", 
-        54321, 
+        "cj", 
+        123, 
         102
     );
     
@@ -29,7 +29,7 @@ function cargarUsuarios() {
         "Acosta", 
         21, 
         "carlos19@gmail.com", 
-        "carlos19", 
+        "carlosJ", 
         123, 
         103
     );
@@ -95,12 +95,12 @@ function cargarUsuarios() {
     );
 
     let user10 = new Usuario(
-        "Andrés", 
-        "Vera", 
+        "Carlos", 
+        "Guevara", 
         33, 
         "averas@gmail.com", 
-        "averas", 
-        20202, 
+        "egp", 
+        1, 
         110
     );
     
