@@ -31,6 +31,70 @@ Age: ${this.age}
 Email: ${this.email}`;
     }
 
+    viewBalance() {
+
+        return alert("\nBALANCE\n" + "Your balance is: $" + this.balance );
+    }
+
+    WithdrawMoney() {
+
+        let input = prompt("\tWITHDRAW\n" + "\nEnter the amount of money to withdraw:");
+        let amount = parseInt(input);
+
+        if (input === "") {
+
+            return alert("Yo cant do this");
+        }
+        
+        if (input === null) {
+
+            return alert("You have cancelled the operation!");
+        }
+        if (isNaN(amount)) {
+
+            return alert("You can only enter numbers!")
+        }
+        if (amount <= 0 || amount > this.balance) {
+
+            return alert("ERROR: Yo cant do this");
+        }
+        else {
+
+            this.balance -= amount;
+            alert("You have withdrawn: $" + amount);
+            return this.viewBalance();
+        }
+    }
+
+    depositMoney() {
+
+        let input = prompt("\tDEPOSIT\n" + "\nEnter the amount to deposit:")
+        let amount = parseInt(input);
+
+        if(input === "") {
+
+            return alert("You can't leave the empty space");
+        }
+        
+        if (input === null) {
+
+            return alert("You have cancelled the operation!");
+        }
+        if (isNaN(amount)) {
+
+            return alert("You can only enter numbers!");
+        }
+        if (amount <= 0) {
+
+            return alert("You cant do this");
+        }
+        else {
+
+            this.balance += amount;
+            alert("You have deposited $" + amount);
+            return this.viewBalance();
+        }
+    }
 }
 
 

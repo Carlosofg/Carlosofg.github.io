@@ -1,7 +1,6 @@
 import { dataBaseUsuarios } from '../BaseDeDatos/DB Usuarios.js';
 import { dataBaseAdmins } from '../BaseDeDatos/DB Admins.js';
 
-
 export function funLogin() {
 
     let loginAbierto = true;
